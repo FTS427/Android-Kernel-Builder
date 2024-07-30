@@ -153,6 +153,7 @@ jobs:
           args: ${{ steps.generate-args.outputs.args }}
         run: |
           echo "PATH Variable: $PATH"
+          alias python=python2
           make ${args}
 
       - name: "💛 Upload Image"
